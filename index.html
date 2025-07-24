@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的个人主页</title>
+  <title>个人主页 - 袁浩程</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <div class="max-w-3xl mx-auto p-6">
-    <!-- 头像与标题 -->
-    <div class="text-center mt-10">
-      <img src="https://avatars.githubusercontent.com/u/1?v=4" alt="头像" class="w-32 h-32 rounded-full mx-auto shadow-md" />
-      <h1 class="text-3xl font-bold mt-4">你的名字</h1>
-      <p class="text-gray-600 mt-2">职业 / 学生 / 个人标签</p>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition-colors duration-300">
+  <!-- 导航栏 -->
+  <header class="bg-white/80 dark:bg-gray-900/80 sticky top-0 backdrop-blur shadow z-50">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">袁浩程</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#about" class="hover:text-blue-500">关于我</a>
+        <a href="#skills" class="hover:text-blue-500">技能</a>
+        <a href="#contact" class="hover:text-blue-500">联系</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- 简介 -->
-    <section class="mt-10">
-      <h2 class="text-xl font-semibold mb-2">关于我</h2>
-      <p class="text-gray-700 leading-relaxed">
-        这里写几句话介绍你自己，比如你的专业、兴趣、正在做的项目等。
+  <!-- 主页内容 -->
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    <!-- 头像和介绍 -->
+    <section class="text-center">
+      <img src="https://avatars.githubusercontent.com/u/1?v=4" alt="头像" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" />
+      <h2 class="text-3xl font-semibold mb-2">你好，我是<span class="text-blue-600 dark:text-blue-400">袁浩程</span></h2>
+      <p class="text-gray-600 dark:text-gray-400 text-lg">一名热爱技术与设计的开发者 / 学生 / AI 研究者</p>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="mt-16">
+      <h3 class="text-2xl font-bold mb-4 border-b pb-2">🧭 关于我</h3>
+      <p class="leading-relaxed text-gray-700 dark:text-gray-300">
+        我目前就读于南京大学智能科学与技术学院，专注于深度学习与图像处理方向。
       </p>
     </section>
 
     <!-- 技能 -->
-    <section class="mt-8">
-      <h2 class="text-xl font-semibold mb-2">技能</h2>
-      <ul class="list-disc list-inside text-gray-700">
-        <li>Python / JavaScript / C++</li>
-        <li>前端开发（HTML / CSS / React）</li>
-        <li>图像处理 / 深度学习 / 数据分析</li>
-      </ul>
+    <section id="skills" class="mt-16">
+      <h3 class="text-2xl font-bold mb-4 border-b pb-2">🛠 技能</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-800 dark:text-gray-200">
+        <div>🌐 HTML / CSS / JS</div>
+        <div>⚙️ Python / C++</div>
+        <div>🎨 TailwindCSS / React</div>
+        <div>📊 数据分析 / 深度学习</div>
+      </div>
     </section>
 
     <!-- 联系方式 -->
-    <section class="mt-8">
-      <h2 class="text-xl font-semibold mb-2">联系我</h2>
-      <p class="text-gray-700">
-        📧 邮箱：<a href="mailto:your@email.com" class="text-blue-600 hover:underline">your@email.com</a><br />
-        💼 GitHub：<a href="https://github.com/yourname" class="text-blue-600 hover:underline">github.com/yourname</a><br />
-        🌐 个人博客：<a href="https://yourblog.com" class="text-blue-600 hover:underline">yourblog.com</a>
-      </p>
+    <section id="contact" class="mt-16">
+      <h3 class="text-2xl font-bold mb-4 border-b pb-2">📬 联系我</h3>
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+        <li>📧 邮箱：<a href="mailto:231880119@smail.nju.edu.cn" class="text-blue-500 hover:underline">your@email.com</a></li>
+        <li>💼 GitHub：<a href="https://github.com/lajirrr" class="text-blue-500 hover:underline">github.com/yourname</a></li>
+      </ul>
     </section>
-  </div>
+
+    <!-- 页脚 -->
+    <footer class="mt-20 text-center text-sm text-gray-500 dark:text-gray-400">
+      &copy; 2025 袁浩程. 版权所有.
+    </footer>
+  </main>
 </body>
 </html>
